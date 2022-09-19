@@ -66,7 +66,7 @@ async function connect() {
   web3gl.networkId = parseInt(provider.chainId);
 
   // if current network id is not equal to network id, then switch
-  if (!(web3gl.networkId == window.web3ChainId || web3gl.networkId == 56 || web3gl.networkId == 137 || web3gl.networkId == 4)) {
+  if (!(web3gl.networkId == window.web3ChainId || web3gl.networkId == 56 || web3gl.networkId == 137 || web3gl.networkId == 4 || web3gl.networkId == 97)) {
     try {
       await window.ethereum.request({
         method: "wallet_switchEthereumChain",
